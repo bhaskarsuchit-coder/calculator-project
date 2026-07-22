@@ -29,6 +29,12 @@ def modulo(a: float, b: float) -> float:
         raise ZeroDivisionError("Cannot modulo by zero")
     return a % b
 
+def new(a: float, b: float) -> float:
+    if a == b:
+        raise ZeroDivisionError("Cannot perform new operation with equal values")
+    return (a + b) /(a - b)
+
+
 
 def parse_number(prompt: str) -> float:
     while True:
@@ -46,7 +52,8 @@ def choose_operation() -> str:
         "4": "Divide",
         "5": "Exponent",
         "6": "Modulo",
-        "7": "Quit"
+        "7": "New_Operation",
+        "8": "Quit"
     }
 
     print("\nCalculator operations:")
@@ -54,10 +61,10 @@ def choose_operation() -> str:
         print(f"  {key}. {name}")
 
     while True:
-        choice = input("Choose an operation (1-7): ").strip()
+        choice = input("Choose an operation (1-8): ").strip()
         if choice in options:
             return choice
-        print("Invalid choice. Enter a number from 1 to 7.")
+        print("Invalid choice. Enter a number from 1 to 8.")
 
 
 def main() -> None:
@@ -66,7 +73,7 @@ def main() -> None:
 
     while True:
         choice = choose_operation()
-        if choice == "7":
+        if choice == "8":
             print("Goodbye!")
             break
 
@@ -86,6 +93,8 @@ def main() -> None:
                 result = exponent(a, b)
             elif choice == "6":
                 result = modulo(a, b)
+            elif choice == "7":
+                result = new(a, b)
             else:
                 print("Unexpected operation.")
                 continue
