@@ -29,7 +29,7 @@ def modulo(a: float, b: float) -> float:
         raise ZeroDivisionError("Cannot modulo by zero")
     return a % b
 
-def new(a: float, b: float) -> float:
+def new_maths(a: float, b: float) -> float:
     if a == b:
         raise ZeroDivisionError("Cannot perform new operation with equal values")
     return (a + b) /(a - b)
@@ -94,7 +94,7 @@ def main() -> None:
             elif choice == "6":
                 result = modulo(a, b)
             elif choice == "7":
-                result = new(a, b)
+                result = new_maths(a, b)
             else:
                 print("Unexpected operation.")
                 continue
