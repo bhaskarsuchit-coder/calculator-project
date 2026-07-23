@@ -6,7 +6,7 @@ with input validation and error handling for invalid or undefined operations.
 Features:
 * Add, Subtract, Multiply, Divide
 * Exponent and Modulo
-* A custom operation (new_maths): calculates (a + b) / (a - b)
+* A custom operation (sum_over_differences): calculates (a + b) / (a - b)
 * Input validation — keeps asking until you enter a valid number
 * Handles division/modulo by zero and equal-value edge cases without crashing
 
@@ -25,7 +25,7 @@ Calculator operations:
   4. Divide
   5. Exponent
   6. Modulo
-  7. New_Operation
+  7. sum_over_difference
   8. Quit
 
 Pick an operation:
