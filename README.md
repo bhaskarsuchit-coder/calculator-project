@@ -1,49 +1,70 @@
-Simple Calculator:
+# Simple Calculator
 
-A command-line calculator built in Python. Supports basic arithmetic plus a couple of extra operations, 
-with input validation and error handling for invalid or undefined operations.
+A command-line calculator built in Python. It supports basic arithmetic operations along with a few additional features, including input validation and error handling for invalid or undefined operations.
 
-Features:
-* Add, Subtract, Multiply, Divide
-* Exponent and Modulo
-* A custom operation (sum_over_differences): calculates (a + b) / (a - b)
-* Input validation — keeps asking until you enter a valid number
-* Handles division/modulo by zero and equal-value edge cases without crashing
+## Features
 
-  
-How to run
-Make sure we have Python 3 installed.
+- Add
+- Subtract
+- Multiply
+- Divide
+- Exponent
+- Modulo
+- Custom operation: `sum_over_difference`  
+  Calculates `(a + b) / (a - b)`
+- Input validation (keeps asking until a valid number is entered)
+- Handles division by zero, modulo by zero, and equal-value edge cases without crashing
 
+## How to Run
 
-Usage
-When we run the program, we'll see a menu:
+1. Make sure Python 3 is installed.
+2. Clone this repository.
+3. Open the project folder in your terminal.
+4. Run the program:
 
-Calculator operations:
-  1. Add
-  2. Subtract
-  3. Multiply
-  4. Divide
-  5. Exponent
-  6. Modulo
-  7. sum_over_difference
-  8. Quit
+```bash
+python calculator.py
+```
 
-Pick an operation:
-enter two numbers when prompted, 
-and the result is printed. 
-Choose 8 to exit.
+## Usage
 
-Example:
+When you run the program, you'll see the following menu:
 
+```
+Calculator Operations
+
+1. Add
+2. Subtract
+3. Multiply
+4. Divide
+5. Exponent
+6. Modulo
+7. Sum Over Difference
+8. Quit
+```
+
+Choose an operation, enter two numbers when prompted, and the program will display the result. Select **8** to exit the application.
+
+## Example
+
+```text
 Choose an operation (1-8): 1
 
 Enter the first number: 5
-
 Enter the second number: 3
 
 Result: 8.0
+```
 
+## Technologies Used
 
-Tech used:
+- Python 3
 
-Python 3 
+## Concepts Practiced
+
+- Functions
+- Conditional Statements
+- Loops
+- Input Validation
+- Exception Handling
+- Arithmetic Operations
